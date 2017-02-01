@@ -7,6 +7,8 @@ Using Python and PostgreSQL, a database is created to track results for a swiss-
 3. Run:
 <code>
 $ psql
+</code>
+<code>
 $ \i tournament.sql
 </code>
 4. To run the unit tests:
@@ -15,14 +17,14 @@ $ python tournament_test.py
 </code>
 
 ## Functions
-connect() = connect to the postgreSQL database
-deleteMatches() = remove all the match records from the database
-deletePlayers() = removed all the player records from the database
-countPlayers() = returns the number of players currently registered
-registerPlayer(name) = adds a player to the tournament database
-playerStandings() = returns a list of the players and their win records, sorted by wins
-reportMatch(winner, loser) = records the outcome of a single match between two players
-swissPairings() = returns a list of pairs of players for the next round of a match
+ connect() = connect to the postgreSQL database
+ deleteMatches() = remove all the match records from the database
+ deletePlayers() = removed all the player records from the database
+ countPlayers() = returns the number of players currently registered
+ registerPlayer(name) = adds a player to the tournament database
+ playerStandings() = returns a list of the players and their win records, sorted by wins
+ reportMatch(winner, loser) = records the outcome of a single match between two players
+ swissPairings() = returns a list of pairs of players for the next round of a match
 
 ## Tables
 
